@@ -1,0 +1,13 @@
+<div *ngIf="currencyInfo$ | async as currencyInfo">
+  <h2>Current exchange rates</h2>
+  <h4 *ngFor="let info of currencyInfo">
+     {{1 / info.exchangeRate | currency: info.currency}}
+  </h4>
+ </div> 
+
+ <div *ngIf="currencyInfo$ | async as currencyInfo">
+  <h2>Current exchange rates</h2>
+  <h4 *ngFor="let info of currencyInfo">
+     {{1 / info.exchangeRate | currency: info.currency}}
+  </h4>
+ </div> 
